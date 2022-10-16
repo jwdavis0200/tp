@@ -20,6 +20,8 @@ public class HelpWindow extends UiPart<Stage> {
     public static final String BASIC_COMMANDS = "1. To add a new student:\n" + "> add n/NAME p/PHONE_NUMBER \n"
             + "2. To find a student in your address book:\n" + "> find NAME\n" + "> find PHONE_NUMBER\n"
             + "3. To view all information of an existing student:\n" + "> view INDEX\n"
+            + "\t NOTE: Editing a student's homework, grade progress, attendance "
+            + "and session times require student to be in view mode.\n"
             + "4. To edit a students details:\n" + "> edit [n/ p/ lp/]NEW_FIELD\n"
             + "> edit [h/ a/ g/]INDEX NEW_FIELD \n"
             + "5. To remove a student from your address book:\n" + "> delete INDEX\n";
