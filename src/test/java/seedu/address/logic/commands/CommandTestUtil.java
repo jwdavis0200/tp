@@ -2,9 +2,13 @@ package seedu.address.logic.commands;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_ATTENDANCE;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_GRADEPROGRESS;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_HOMEWORK;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_LESSON_PLAN;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_NAME;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_PHONE;
+import static seedu.address.logic.parser.CliSyntax.PREFIX_SESSION;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TAG;
 import static seedu.address.testutil.Assert.assertThrows;
 
@@ -50,6 +54,13 @@ public class CommandTestUtil {
     public static final String LESSON_PLAN_DESC_BOB = " " + PREFIX_LESSON_PLAN + VALID_LESSON_PLAN_BOB;
     public static final String TAG_DESC_FRIEND = " " + PREFIX_TAG + VALID_TAG_FRIEND;
     public static final String TAG_DESC_HUSBAND = " " + PREFIX_TAG + VALID_TAG_HUSBAND;
+    public static final String HOMEWORK_DESC_AMY = " " + PREFIX_HOMEWORK + "1 " + VALID_HOMEWORK_AMY;
+    public static final String HOMEWORK_DESC_BOB = " " + PREFIX_HOMEWORK + "1 " + VALID_HOMEWORK_BOB;
+    public static final String ATTENDANCE_DESC_AMY = " " + PREFIX_ATTENDANCE + "1 " + VALID_ATTENDANCE_AMY;
+    public static final String ATTENDANCE_DESC_BOB = " " + PREFIX_ATTENDANCE + "1 " + VALID_ATTENDANCE_BOB;
+    public static final String SESSION_DESC_AMY = " " + PREFIX_SESSION + "1 " + VALID_SESSION_AMY;
+    public static final String SESSION_DESC_BOB = " " + PREFIX_SESSION + "1 " + VALID_SESSION_BOB;
+    public static final String GRADE_PROGRESS_DESC_AMY = " " + PREFIX_GRADEPROGRESS + "1 " + VALID_GRADE_PROGRESS_AMY;
 
     public static final String INVALID_NAME_DESC = " " + PREFIX_NAME + "James&"; // '&' not allowed in names
     public static final String INVALID_PHONE_DESC = " " + PREFIX_PHONE + "911a"; // 'a' not allowed in phones
