@@ -2,6 +2,7 @@ package seedu.address.logic.parser;
 
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.core.Messages.MESSAGE_INVALID_COMMAND_FORMAT;
+import static seedu.address.commons.core.Messages.MESSAGE_INVALID_EDIT;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_ATTENDANCE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_GRADEPROGRESS;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_HOMEWORK;
@@ -26,6 +27,14 @@ import seedu.address.model.tag.Tag;
  * Parses input arguments and creates a new EditCommand object
  */
 public class EditCommandParser implements Parser<EditCommand> {
+    private static boolean isFullView = false; //state to allow certain edit commands
+
+    /**
+     * sets isFullView to true to allow for edits of fields requiring this view.
+     */
+    public static void setIsFullView() {
+        isFullView = true;
+    }
 
     /**
      * Parses the given {@code String} of arguments in the context of the EditCommand
@@ -58,22 +67,38 @@ public class EditCommandParser implements Parser<EditCommand> {
                     argMultimap.getValue(PREFIX_LESSON_PLAN).get()));
         }
         if (argMultimap.getValue(PREFIX_HOMEWORK).isPresent()) {
+            if (!isFullView) {
+                throw new ParseException(MESSAGE_INVALID_EDIT);
+            }
+            isFullView = false;
             String[] homeworkArgs = ParserUtil.parseHomeworkInfo(argMultimap.getValue(PREFIX_HOMEWORK).get());
             editPersonDescriptor.setHomeworkIndex(ParserUtil.parseIndex(homeworkArgs[0]));
             editPersonDescriptor.setHomework(ParserUtil.parseHomework(homeworkArgs[1]));
         }
         if (argMultimap.getValue(PREFIX_GRADEPROGRESS).isPresent()) {
+            if (!isFullView) {
+                throw new ParseException(MESSAGE_INVALID_EDIT);
+            }
+            isFullView = false;
             String[] gradeProgressArgs = ParserUtil
                 .parseGradeProgressInfo(argMultimap.getValue(PREFIX_GRADEPROGRESS).get());
             editPersonDescriptor.setGradeProgressIndex(ParserUtil.parseIndex(gradeProgressArgs[0]));
             editPersonDescriptor.setGradeProgress(ParserUtil.parseGradeProgress(gradeProgressArgs[1]));
         }
         if (argMultimap.getValue(PREFIX_ATTENDANCE).isPresent()) {
+            if (!isFullView) {
+                throw new ParseException(MESSAGE_INVALID_EDIT);
+            }
+            isFullView = false;
             String[] attendanceArgs = ParserUtil.parseAttendanceInfo(argMultimap.getValue(PREFIX_ATTENDANCE).get());
             editPersonDescriptor.setAttendanceIndex(ParserUtil.parseIndex(attendanceArgs[0]));
             editPersonDescriptor.setAttendance(ParserUtil.parseAttendance(attendanceArgs[1]));
         }
         if (argMultimap.getValue(PREFIX_SESSION).isPresent()) {
+            if (!isFullView) {
+                throw new ParseException(MESSAGE_INVALID_EDIT);
+            }
+            isFullView = false;
             String[] sessionArgs = ParserUtil.parseSessionInfo(argMultimap.getValue(PREFIX_SESSION).get());
             editPersonDescriptor.setSessionIndex(ParserUtil.parseIndex(sessionArgs[0]));
             editPersonDescriptor.setSession(ParserUtil.parseSession(sessionArgs[1]));

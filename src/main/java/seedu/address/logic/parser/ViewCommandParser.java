@@ -25,7 +25,7 @@ public class ViewCommandParser implements Parser<ViewCommand> {
                     String.format(MESSAGE_INVALID_COMMAND_FORMAT, ViewCommand.MESSAGE_USAGE));
         }
         String[] nameKeywords = {trimmedArgs};
-
+        EditCommandParser.setIsFullView();
         return new ViewCommand(new NameIsKeywordsPredicate(Arrays.asList(nameKeywords)));
     }
 }
