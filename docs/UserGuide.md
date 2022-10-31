@@ -391,9 +391,9 @@ _Details coming soon ..._
 
 ---
 
-### Summaries
+## Summaries
 
-## Command summary
+### Command summary
 
 
 | Action                 | Format, Examples                                                                                                                                                             |
@@ -417,7 +417,7 @@ _Details coming soon ..._
 | **Update Lesson plan** | `lesson INDEX lp/LESSON_PLAN`<br> e.g., `lesson 1 lp/Biology`                                                                                                                |
 | **View**               | `view NAME`<br> e.g., `view James Ho`                                                                                                                                        |
 
-## Prefixes summaries
+### Prefixes summaries
 
 
 | Prefix | Definition                             | Usage                                                                                                                                                                                      | Example        |
