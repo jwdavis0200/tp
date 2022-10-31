@@ -30,10 +30,9 @@ If you are a private tutor struggling to:
 Pupilist can get your scheduling done faster with single line CLI command inputs to manage all your tutoring needs.
 
 <br>
-
+---
 * Table of Contents
   {:toc}
-
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary
