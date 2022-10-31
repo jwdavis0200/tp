@@ -32,7 +32,7 @@ Pupilist can get your scheduling done faster with single line CLI command inputs
 <br>
 ---
 * Table of Contents
-  {:toc}
+{:toc}
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## Glossary
