@@ -7,8 +7,6 @@ title: User Guide
 Welcome to Pupilist User Guide!
 </div>
 
-## Introducing Pupilist
-
 <p align="center">
   <img src="images/pupilist.png" alt="Pupilist's app icon"/>
 </p>
@@ -24,7 +22,7 @@ If you are a private tutor struggling to:
 
 Pupilist can get your scheduling done faster with single line CLI command inputs to manage all your tutoring needs.
 
-## Table of Contents
+<br>
 
 * Table of Contents
   {:toc}
