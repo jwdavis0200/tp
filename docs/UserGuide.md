@@ -36,7 +36,7 @@ Pupilist can get your scheduling done faster with single line CLI command inputs
 
 ---
 
-### Glossary
+## Glossary
 
 
 | Term      | Description                                                                                                                                                                                                                                                                                                                                        |
