@@ -2,14 +2,21 @@
 layout: page
 title: User Guide
 ---
-<div align="center">
-<h1> Pupilist User Guide</h1>
-Welcome to Pupilist User Guide!
-</div>
 
-<p align="center">
-  <img src="images/pupilist.png" alt="Pupilist's app icon"/>
-</p>
+[//]: # (<div align="center">)
+
+[//]: # (<h1> Pupilist User Guide</h1>)
+
+[//]: # (Welcome to Pupilist User Guide!)
+
+[//]: # (</div>)
+
+[//]: # ()
+[//]: # (<p align="center">)
+
+[//]: # (  <img src="images/pupilist.png" alt="Pupilist's app icon"/>)
+
+[//]: # (</p>)
 
 Pupilist is an **application for managing students details for private tutors**. It aims to **help you organise your students information to better manage your lessons and students in an all-in-one application**.
 
