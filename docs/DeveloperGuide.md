@@ -920,7 +920,7 @@ testers are expected to do more *exploratory* testing.
       Expected: First homework is marked as uncompleted in the homework list of the person displayed.
    3. Test case: `unmark g/1` <br>
       Expected: No field is marked. Error details shown in the status message.
-   4. Other incorrect unmark commands to try: `unmark` , `unmark a/x`, `unmark h/x` and `unmark 1242`  (where x is larger than the list size)
+   4. Other incorrect unmark commands to try: `unmark` , `unmark a/x`, `unmark h/x` and `unmark 1242`  (where x is larger than the list size).
 
 2. Unmarking a student in `Pupilist`
    1. Prerequisite: List all persons using the `list` command. Multiple persons in the list.
